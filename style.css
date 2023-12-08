@@ -1,178 +1,271 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Rubik:wght@400;600&display=swap");
 
-* {
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Noto+Sans:ital@1&family=Poppins:wght@300;400&family=Roboto:wght@700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Noto+Sans:ital@1&family=Poppins:wght@300;400&family=Roboto:wght@700;900&family=Rubik:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.flex{
+    display: flex;
+}
+nav{
+    justify-content: space-between;
+    padding:30px 50px 2px 70px ;
+    align-items: center;
+}
+.distance {
+    padding-top: 20px;
+}
+.logo {
+    width: 150px;
+    padding-left: 5px;
+}
+.cartdiv{
+    
+    padding: 0px 0px 10px 45px;
+    font-family: 'Roboto';
+    width: 220px;
+}
+.cart{
+    width: 30px;
+}
+h1 {
+    font-size: 80px;
+    font-weight: 300;
+}
+#Bigtext {
+    position: relative;
+    top: 10%;
+    left: 4.5%;
+    color: white;       
+}
+.kidsworld {
+    background-image: url("assets/kw-background.png");
+    width: 100%;
+    height: 500px;
+    background-size: 100% 500px;
+    color: white;
 }
 
-body {
-  font-family: "Rubik", sans-serif;
+.Books,.Games,.Crafts{
+    justify-content: space-around;
+}
+.Books{
+    padding: 0px 66px;
+    justify-content: space-between;
+}
+.Books img{
+    width: 180px;
+}
+.Games img,.Crafts img{
+    width: 240px;
+}
+.Sideheading{
+    padding: 40px 0px 15px 70px;
+}
+.icon{
+    background-color: hsl(220,100%,69%);
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 300;
+    padding: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+.icon:hover , .cart:hover   {
+    cursor: pointer;
+}
+.icon img{
+    width: 20px;
 }
 
-.books {
-  max-width: 200px;
+.space-between{
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
 }
 
-.games,
-.crafts {
-  max-width: 300px;
+.space-between p {
+    font-weight: 900;
+    font-size: 18px;
+    font-weight: bolder;
 }
-
-.flex {
-  display: flex;
-}
-
-.section-container {
-  flex-direction: column;
-  padding: 5%;
-}
-
-.space-between {
-  justify-content: space-between;
-  align-items: center;
-}
-
-.space-evenly {
-  justify-content: space-evenly;
-}
-
-nav {
-  height: 50px;
-  width: 100%;
-}
-
-nav>div {
-  padding: 0% 5%;
-}
-
-nav img {
-  height: 30px;
-}
-
-#cart {
-  font-weight: bold;
-  align-items: center;
-}
-
-header {
-  height: 500px;
-  width: 100%;
-  background-image: url("./assets/kw-background.png");
-  background-size: 100% 100%;
-  color: white;
-}
-
-.header-text {
-  flex-direction: column;
-  max-height: 100%;
-  max-width: 20%;
-  padding: 4% 5%;
-}
-
-header h1 {
-  font-size: 7vh;
-}
-
-header h5 {
-  font-size: 23px;
-  margin-top: 20px;
-}
-
-.section {
-  margin: 4% 0%;
-}
-
-.button {
-  cursor: pointer;
-  background-color: #6095ff;
-  color: white;
-  padding: 7px;
-  border-radius: 4px;
-}
-
-.buy img {
-  width: 20px;
-  padding-left: 5px;
-}
-
-.buy {
-  margin-top: 15px;
-  padding-bottom: 50px;
-}
-
-footer {
-  /* max-height: 300px; */
-  background-image: url("http://i1.faceprep.in/prograd-junior/footer-bg.png");
-  background-size: 100% 100%;
-  color: white;
-  padding: 0% 5%;
-}
-
-footer img {
-  height: 150px;
-  width: 150px;
-  border-radius: 50%;
-}
-
-#details {
-  flex-direction: column;
-  text-align: right;
-}
-
-h1,
-h2 {
-  font-family: "Playfair Display", serif;
-  font-weight: bold;
-}
-
 h4 {
-  color: grey;
-  font-weight: lighter;
+    font-weight: lighter;
+    color: gray;
+    font-size: 14px;
+    padding: 8px 0px 18px 0px;
+    font-family: 'Poppins', sans-serif;
+}
+h3 {
+    font-family: 'Rubik', sans-serif;
 }
 
-h6 {
-  font-size: 17px;
+/* Styling footer  */
+footer {
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding: 0px 66px;
+    text-align:right;
+}
+#pic{
+    border-radius: 50%;
+    width: 160px;
+    background-color: aliceblue;
+    height:160px;
+    background-size: 100% 100%;
+    margin: 15px;
+}
+#Footertext{
+    color: white;
+    font-size: 14px;
+    font-weight: lighter;
+    font-family: 'Poppins', sans-serif;
 }
 
-.buy p {
-  font-weight: bold;
-  font-size: 20px;
+
+@media (max-width: 768px) {
+    *{
+        margin: 0;
+        padding: 0  ;
+    }
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        padding: 15px 20px; 
+    }
+
+    .logo {
+        width: 180px;
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 36px; 
+    }
+
+    #Bigtext {
+        top: 5%;
+        left: 4%;
+        text-align: left; 
+        width: 140px;
+    }
+
+    .kidsworld {
+        background-size: 100% 100%;
+        height: 300px; 
+    }
+
+    .Books, .Games, .Crafts {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .Sideheading{
+        padding: 40px 0px 0px 0px;
+        font-size: 25px;
+        text-align: center;
+    }
+    h3,h4{
+        text-align: center;
+    }
+    .cart{
+        width: 40px;
+    }
+    .cartdiv{
+        padding-right: 0px;
+        width: 190px;
+    }
+    .Books, .Games, .book, .game {
+        margin-bottom: 20px; 
+        padding: 20px;  
+    }
+    .Crafts , .handcraft ,.Games, .game{
+        margin-bottom: 20px; 
+        padding: 10px;  
+    }
+    .book1{
+        padding-bottom: 40px;
+    }
+    .Books img, .Games img, .Crafts img {
+        width: 100%; 
+        padding: 10px;
+    }
+
+    .icon {
+        flex-direction: row;
+        align-items: center;
+        font-size: 22px; 
+        width: 80px;
+        height: 40px;
+        padding: 5px;
+    }
+  
+    
+    .space-between {
+        align-items: center; 
+        justify-content: space-between;
+        padding: 0px 10px 0px 12px;
+    }
+
+    .space-between p {
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 20px; 
+    }
+    h2{
+        text-align: center;
+        font-size: xx-large;
+    }
+    .footer>p{
+        text-align: right;
+    }
+    .footer  h3{
+        text-align: right;
+    }
+
+    #pic {
+        width: 110px; 
+        height: 110px;
+        margin: 14px;
+    }
+
+   
+    #Footertext {
+        font-size: 14px;
+        color: white;
+    }
 }
-
-h3,
-h2 {
-  margin-bottom: 10px;
-}
-
-.container {
-  flex-wrap: wrap;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    height: 200px;
-    font-size: 15px;
-    text-align: start;
-  }
-
-  header h1 {
-    font-size: 4vh;
-  }
-
-  header h5 {
-    font-size: 15px;
-  }
-
-  .header-text {
-    padding: 0% 60% 5% 5%;
-  }
-
-  body {
-    text-align: center;
-  }
-
-  .container {
-    justify-content: center;
-  }
-}
-
+@media (max-width: 1024px) and (min-width: 768px){
+    *{
+        margin: 0;
+        padding: 0  ;
+    }
+    .Books , .Games , .Crafts {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .space-between {
+        align-items: center; 
+        justify-content: space-between;
+        padding: 0px 10px 0px 12px;
+    }
+    .icon {
+        flex-direction: row;
+        align-items: center;
+        font-size: 22px; 
+        width: 80px;
+        height: 40px;
+        padding: 5px;
+    }
+    .Books img, .Games img, .Crafts img {
+        width: 100%; 
+        padding: 10px;
+    }
+} 
